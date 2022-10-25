@@ -1,0 +1,485 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AA559A28-68F7-4AB1-9744-12D2B75AC129}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JSFW.PREZI</RootNamespace>
+    <AssemblyName>JSFW.PREZI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>C:\JSFW\PREZI\APP\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>true</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://aseuka.tistory.com/</InstallUrl>
+    <MinimumRequiredVersion>1.0.0.31</MinimumRequiredVersion>
+    <ApplicationRevision>31</ApplicationRevision>
+    <ApplicationVersion>1.0.0.31</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>BE01154FD960FC0D96F18F052A8F1064983756E8</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>JSFW.PREZI_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>Custom</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>PreziJSFW.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DelaySign>false</DelaySign>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="SourceGrid, Version=4.30.4544.41914, Culture=neutral, PublicKeyToken=df6f5e538749e85d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dlls\SourceGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\AT_FileControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\AT_GroupControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\AT_GroupControl.designer.cs">
+      <DependentUpon>AT_GroupControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AT_ImageControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\AT_ImageControl.designer.cs">
+      <DependentUpon>AT_ImageControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AT_TextControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\AT_TextControl.designer.cs">
+      <DependentUpon>AT_TextControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BackGroundImage_SettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\BackGroundImage_SettingForm.Designer.cs">
+      <DependentUpon>BackGroundImage_SettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DesignPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Editor\Editor_AT_FileControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Editor\Editor_AT_FileControl.Designer.cs">
+      <DependentUpon>Editor_AT_FileControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Editor\Editor_AT_ImageControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Editor\Editor_AT_ImageControl.Designer.cs">
+      <DependentUpon>Editor_AT_ImageControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Editor\Editor_AT_TextControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Editor\Editor_AT_TextControl.Designer.cs">
+      <DependentUpon>Editor_AT_TextControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Editor\Editor_FrameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Editor\Editor_FrameForm.Designer.cs">
+      <DependentUpon>Editor_FrameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Editor\Editor_NewDrawingPicture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Editor\Editor_NewDrawingPicture.Designer.cs">
+      <DependentUpon>Editor_NewDrawingPicture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Editor\ImageClipViewItemControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Editor\ImageClipViewItemControl.Designer.cs">
+      <DependentUpon>ImageClipViewItemControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Editor\NewImageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Editor\NewImageForm.Designer.cs">
+      <DependentUpon>NewImageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Edit_ToolBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Edit_ToolBar.designer.cs">
+      <DependentUpon>Edit_ToolBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ItemCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ItemCtrl.Designer.cs">
+      <DependentUpon>ItemCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ItemsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ItemsControl.Designer.cs">
+      <DependentUpon>ItemsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\JSFW_BoxInCircle.cs" />
+    <Compile Include="Controls\Label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\LinkItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\LinkItem.designer.cs">
+      <DependentUpon>LinkItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LinkPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\LinkPanel.designer.cs">
+      <DependentUpon>LinkPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NewItemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\NewItemForm.Designer.cs">
+      <DependentUpon>NewItemForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PaintLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\PreziDesignControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PreziDesignControl.Designer.cs">
+      <DependentUpon>PreziDesignControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Transparent_Panel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Transparent_Panel.Designer.cs">
+      <DependentUpon>Transparent_Panel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UI\Mv.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UI\Mv.designer.cs">
+      <DependentUpon>Mv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Demo_SplashWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Demo_SplashWindow.Designer.cs">
+      <DependentUpon>Demo_SplashWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Demo_StackTrace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Demo_StackTrace.Designer.cs">
+      <DependentUpon>Demo_StackTrace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Demo_Task_Progress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Demo_Task_Progress.Designer.cs">
+      <DependentUpon>Demo_Task_Progress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Demo_Transparent_PanelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Demo_Transparent_PanelForm.Designer.cs">
+      <DependentUpon>Demo_Transparent_PanelForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Demo_Tuple.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Demo_Tuple.Designer.cs">
+      <DependentUpon>Demo_Tuple.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UI\JSFW_Mover.cs" />
+    <Compile Include="PreziDesignForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PreziDesignForm.Designer.cs">
+      <DependentUpon>PreziDesignForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SplashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashForm.Designer.cs">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UtilEx.cs" />
+    <EmbeddedResource Include="Controls\AT_GroupControl.resx">
+      <DependentUpon>AT_GroupControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\AT_ImageControl.resx">
+      <DependentUpon>AT_ImageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\AT_TextControl.resx">
+      <DependentUpon>AT_TextControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\BackGroundImage_SettingForm.resx">
+      <DependentUpon>BackGroundImage_SettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Editor\Editor_AT_FileControl.resx">
+      <DependentUpon>Editor_AT_FileControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Editor\Editor_AT_ImageControl.resx">
+      <DependentUpon>Editor_AT_ImageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Editor\Editor_AT_TextControl.resx">
+      <DependentUpon>Editor_AT_TextControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Editor\Editor_FrameForm.resx">
+      <DependentUpon>Editor_FrameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Editor\Editor_NewDrawingPicture.resx">
+      <DependentUpon>Editor_NewDrawingPicture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Editor\ImageClipViewItemControl.resx">
+      <DependentUpon>ImageClipViewItemControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Editor\NewImageForm.resx">
+      <DependentUpon>NewImageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Edit_ToolBar.resx">
+      <DependentUpon>Edit_ToolBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ItemCtrl.resx">
+      <DependentUpon>ItemCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ItemsControl.resx">
+      <DependentUpon>ItemsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\LinkItem.resx">
+      <DependentUpon>LinkItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\LinkPanel.resx">
+      <DependentUpon>LinkPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NewItemForm.resx">
+      <DependentUpon>NewItemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PreziDesignControl.resx">
+      <DependentUpon>PreziDesignControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Transparent_Panel.resx">
+      <DependentUpon>Transparent_Panel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UI\Mv.resx">
+      <DependentUpon>Mv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Demo_SplashWindow.resx">
+      <DependentUpon>Demo_SplashWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Demo_StackTrace.resx">
+      <DependentUpon>Demo_StackTrace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Demo_Task_Progress.resx">
+      <DependentUpon>Demo_Task_Progress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Demo_Transparent_PanelForm.resx">
+      <DependentUpon>Demo_Transparent_PanelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Demo_Tuple.resx">
+      <DependentUpon>Demo_Tuple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PreziDesignForm.resx">
+      <DependentUpon>PreziDesignForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SplashForm.resx">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="PreziJSFW.pfx" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newfile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pdf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ppt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Process.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\txt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\X.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xls.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dll.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\File.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\front.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gif.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jpg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Dlls\SourceGrid.dll" />
+    <None Include="Resources\bgImg.png" />
+    <None Include="Resources\dot10.png" />
+    <None Include="Resources\Brush_Black.png" />
+    <None Include="Resources\Brush_Blue.png" />
+    <None Include="Resources\Brush_Red.png" />
+    <None Include="Resources\Brush_Yellow.png" />
+    <None Include="Resources\Brush_Balck.png" />
+    <None Include="Resources\dot3.png" />
+    <None Include="Resources\erase.png" />
+    <None Include="Resources\pen.png" />
+    <None Include="Resources\cursor.png" />
+    <None Include="Resources\Layout.png" />
+    <None Include="Resources\stop.png" />
+    <None Include="Resources\play.png" />
+    <None Include="Resources\FrameView.png" />
+    <None Include="Resources\ContentView.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
